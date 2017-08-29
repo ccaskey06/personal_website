@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
+    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  </head>
+
+
+  <body>
+
+      <nav class="navbar navbar-inverse navbar-fixed-top">
+        <div class="container-fluid">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <a class="navbar-brand" href="home.html">WebSiteName</a>
+          </div>
+          <div class="collapse navbar-collapse" id="myNavbar">
+            <ul class="nav navbar-nav">
+              <li class="active"><a href="home.html">Home</a></li>
+              <li><a href="skills.html">Skills</a></li>
+              <li><a href="bio.html">Biography</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="hobbies.html">Hobbies & Interests</a></li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <div>
+        <img src="composite.jpg" class="img-circle" width="300" height="300">
+        <h1>Corey Caskey</h1>
+        <h3>Computer Science</h3>
+        <h1>Welcome!</h1>
+        <h3>My name is Corey Caskey and this is my personal website. Thank you for visiting!
+          I am a second year student attending the Georgia Institute of Technology, majoring in Computer Science.
+          If you want to learn more about me, feel free to scroll through to see my back-story, some of my sample work,
+          and my interests & hobbies. Below you'll find some of my skills. If you have any questions or want to get
+          in contact with me, please fill out the contact form below!
+        </h3>
+      </div>
+
+      <div>
+        <button type="button" class="btn btn-success" onclick="window.open('resume.pdf')">Download Resume</button>
+        <img src="github.png" class="img-circle" width="50" height="50">
+        <img src="in.png" class="img-circle" width="50" height="50">
+        <h3>If you can't explain it simply, you don't understand it well enough. - Albert Einstein</h3>
+      </div>
+
+      <div>
+        <div class="form-group">
+          <label for="name">Name:</label>
+          <input type="text" class="form-control" id="name">
+        </div>
+        <div class="form-group">
+          <label for="email">Name:</label>
+          <input type="text" class="form-control" id="email">
+        </div>
+        <div class="form-group">
+          <label for="subject">Password:</label>
+          <input type="text" class="form-control" id="subject">
+        </div>
+        <div class="form-group">
+          <label for="message">Comment:</label>
+          <textarea class="form-control" rows="5" id="message"></textarea>
+        </div>
+        <button type="button" class="btn btn-success" onclick="alert('Sent')">Send</button>
+      </div>
+
+  </body>
+
+
+
+</html>
