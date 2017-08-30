@@ -4,80 +4,382 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <!-- <link rel="stylesheet" href="bootstrap/css/bootstrap.min.css"> -->
-    <!-- <script src="bootstrap/js/bootstrap.min.js"></script> -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+    <style>
+
+    .bg-1 {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)),
+                      url("atlantacampus.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      padding-top: 140px;
+      padding-bottom: 200px;
+    }
+
+    .bg-1 p {
+      font-size: 100px;
+      color: white;
+      padding-bottom: 80px;
+    }
+
+    .bg-2 {
+      background-color: #def2f1;
+    }
+
+    .bg-2 img {
+      margin-top: -225px;
+      border: 10px solid #def2f1;
+    }
+
+    .composite {
+      padding-top: 70px;
+      padding-bottom: 40px;
+    }
+
+    textarea {
+      resize: none;
+    }
+
+    .form-group {
+      max-width: 500px;
+      margin-left: 25px;
+      margin-right: 25px;
+    }
+
+    .form-buttons {
+      padding-left: 25px;
+      padding-bottom: 25px;
+    }
+
+    .btn .btn-default {
+      background-color: transparent;
+    }
+
+    .welcome-msg h1 {
+      margin-left: 25px;
+      margin-bottom: 25px;
+    }
+
+    .welcome-msg p {
+      margin-left: 100px;
+      margin-right: 50px;
+      font: georgia;
+      line-height: 150%;
+      font-size: 20px;
+      /*text-align: center;*/
+    }
+
+    .welcome-msg {
+      background-color: #def2f1;
+      padding-bottom: 25px;
+    }
+
+    .welcome-msg div {
+      padding-left: 25px;
+    }
+
+    .btn-success {
+      background-color: #05386b;
+      border-color: #05386b;
+    }
+
+    .btn-success:hover {
+      background-color: #379683;
+      border-color: #379683;
+    }
+
+    .btn-success:active {
+      background-color: #05386b;
+      border-color: #05386b;
+    }
+
+    .contact {
+      background-image: linear-gradient(rgba(0, 0, 0, 0.75), rgba(0, 0, 0, 0.75)),
+                      url("wallpaper.jpg");
+      background-position: center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-attachment: fixed;
+      padding-top: 25px;
+      padding-bottom: 25px;
+    }
+
+    .contact p {
+      font-size: 75px;
+      color: white;
+      padding-left: 25px;
+    }
+
+    .contact label {
+      color: white;
+      font-size: 20px;
+    }
+
+    </style>
+
   </head>
 
 
-  <body>
+  <body data-spy="scroll" data-target=".navbar" data-offset="50">
 
-      <nav class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container-fluid">
-          <div class="navbar-header">
-            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-            </button>
-            <a class="navbar-brand" href="home.html">WebSiteName</a>
-          </div>
-          <div class="collapse navbar-collapse" id="myNavbar">
-            <ul class="nav navbar-nav">
-              <li class="active"><a href="home.html">Home</a></li>
-              <li><a href="skills.html">Skills</a></li>
-              <li><a href="bio.html">Biography</a></li>
-              <li><a href="project.html">Projects</a></li>
-              <li><a href="hobbies.html">Hobbies & Interests</a></li>
-            </ul>
+    <!-- The navbar - The <a> elements are used to jump to a section in the scrollable area -->
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <ul class="nav navbar-nav">
+        <li><a href="#welcome">Welcome</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#bio">Biography</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#hobbies">Hobbies And Interests</a><li>
+        <li><a href="#contact">Contact Me</a></li>
+    </nav>
+
+    <!-- Section 1 -->
+    <div id="welcome">
+      <div class="container-fluid bg-1 text-center">
+        <p><strong>HI, I'M COREY CASKEY<strong></p>
+      </div>
+
+      <div class="container-fluid bg-2 text-center composite">
+        <img src="composite.jpg" class="img-circle" width="300" height="300" border="10" border-color="#edf5e1">
+      </div>
+
+      <div class="container-fluid welcome-msg">
+        <h1>Welcome!</h1>
+        <p>First and foremost, I'd like to thank you for visiting my personal website! My name is Corey Caskey
+           and I am a third-year student at the Georgia Institute of Technology, where I major in Computer Science.
+           If you want to learn more about me, my previous and current projects, or my skills, feel free to jump
+           between tabs. And, if you have any questions, you can reach me by email via the contact form below.
+        </p>
+
+        <div>
+          <button type="button" class="btn btn-success" onclick="window.open('resume.pdf')">Download My Resume</button>
+          <a href="https://github.com/ccaskey6">
+            <img src="github.png" class="img-circle" width="45" height="45">
+          </a>
+          <a href="https://www.linkedin.com/in/corey-caskey-b6000a116/">
+            <img src="in.png" class="img-circle" width="50" height="50">
+          </a>
+          <!-- <h3>If you can't explain it simply, you don't understand it well enough. - Albert Einstein</h3> -->
+        </div>
+      </div>
+    </div>
+
+    <div id=skills>
+      <div>
+        <h1 style="padding-top: 70px">Technical Skills</h1>
+
+        <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">Java</button>
+        <div id="demo" class="collapse">
+          <p style="padding-top: 15px"><strong>Experience:</strong></p>
+          <div class="progress">
+            <div class="progress-bar" role="progressbar" aria-valuenow="70"
+            aria-valuemin="0" aria-valuemax="100" style="width:80%">
+              80%
+            </div>
           </div>
         </div>
-      </nav>
 
+          <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">HTML and CSS</button>
+          <div id="demo" class="collapse">
+            <p style="padding-top: 15px"><strong>Experience:</strong></p>
+            <div class="progress">
+              <div class="progress-bar" role="progressbar" aria-valuenow="70"
+              aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                80%
+              </div>
+            </div>
+          </div>
+
+            <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">React JavaScript</button>
+            <div id="demo" class="collapse">
+              <p style="padding-top: 15px"><strong>Experience:</strong></p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                  80%
+                </div>
+              </div>
+            </div>
+
+            <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">Python</button>
+            <div id="demo" class="collapse">
+              <p style="padding-top: 15px"><strong>Experience:</strong></p>
+              <div class="progress">
+                <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                  80%
+                </div>
+              </div>
+            </div>
+
+              <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">Swift</button>
+              <div id="demo" class="collapse">
+                <p style="padding-top: 15px"><strong>Experience:</strong></p>
+                <div class="progress">
+                  <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                  aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                    80%
+                  </div>
+                </div>
+              </div>
+
+                <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">C</button>
+                <div id="demo" class="collapse">
+                  <p style="padding-top: 15px"><strong>Experience:</strong></p>
+                  <div class="progress">
+                    <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                    aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                      80%
+                    </div>
+                  </div>
+                </div>
+
+
+                  <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">LC-3 Assembly</button>
+                  <div id="demo" class="collapse">
+                    <p style="padding-top: 15px"><strong>Experience:</strong></p>
+                    <div class="progress">
+                      <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                      aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                        80%
+                      </div>
+                    </div>
+                  </div>
+
+                    <button type="button" class="btn btn-success" data-toggle="collapse" data-target="#demo">PostgreSQL</button>
+                    <div id="demo" class="collapse">
+                      <p style="padding-top: 15px"><strong>Experience:</strong></p>
+                      <div class="progress">
+                        <div class="progress-bar" role="progressbar" aria-valuenow="70"
+                        aria-valuemin="0" aria-valuemax="100" style="width:80%">
+                          80%
+                        </div>
+                      </div>
+                    </div>
+        </div>
+
+
+
+        <h3>Microsoft Excel</h3>
+        <h3>Xcode</h3>
+        <h3>Android Studio</h3>
+        <h3>Firebase</h3>
+        <h3>Eclipse IDE</h3>
+
+
+        <h1>Soft Skills</h1>
+        <h3>English</h3>
+        <h3>French</h3>
+        <h3>Spanish</h3>
+    </div>
+
+    <div id="bio">
       <div>
-        <img src="composite.jpg" class="img-circle" width="300" height="300">
-        <h1>Corey Caskey</h1>
-        <h3>Computer Science</h3>
-        <h1>Welcome!</h1>
-        <h3>My name is Corey Caskey and this is my personal website. Thank you for visiting!
-          I am a second year student attending the Georgia Institute of Technology, majoring in Computer Science.
-          If you want to learn more about me, feel free to scroll through to see my back-story, some of my sample work,
-          and my interests & hobbies. Below you'll find some of my skills. If you have any questions or want to get
-          in contact with me, please fill out the contact form below!
+        <h1><strong>Education: </strong></h1><h1>Georgia Institute of Technology</h1>
+        <h1><strong>Year: </strong></h1><h1>Junior (3rd Year)</h1>
+        <h1><strong>Major: </strong></h1><h1>Computer Science</h1>
+        <h1><strong>Involvement: </strong></h1><h1>Alpha Kappa Psi Business Fraternity, College of Computing OEC, College of Computing Tutor, GT 1000 Team Leader</h1>
+        <h1><strong>Mission: </strong></h1><h1>To pursue a career in software development or as a systems architect, create amazing things, and love my work!</h1>
+        <h3>My name is Corey Caskey. I am a second-year Computer Science student at the Georgia Institute of Technology.
+          Throughout high school, my interests varied, shifting from Mechanical Engineering to Chemical Engineering and finally,
+          Computer Science. My focus in my major is Systems & Architecture and Information Networks. Having come into Computer
+          Science only recently, I am looking to find my niche interest(s) in this broad major. Whether by learning various programming
+          languages and their applications, or finding campus organizations in CS that spark my interest, or working on projects inside
+          and outside of class, I am continuing to grow my knowledge.
+        </h3><br />
+        <h3>College has also afforded me the chance to expand myself outside of my major. I have become a part of Alpha Kappa Psi
+          Business Fraternity, I am a Student Assistant at the College of Computing, and I assist students in Computer Science as
+          a tutor. Likewise, I have found my passion for writing, which is something I hope to continue pursuing throughout my time here.
         </h3>
       </div>
+    </div>
 
+    <div id="projects">
       <div>
-        <button type="button" class="btn btn-success" onclick="window.open('resume.pdf')">Download Resume</button>
-        <img src="github.png" class="img-circle" width="50" height="50">
-        <img src="in.png" class="img-circle" width="50" height="50">
-        <h3>If you can't explain it simply, you don't understand it well enough. - Albert Einstein</h3>
+        <h3>Civilization Game - 2016</h3>
+        <h6>A text-based implementation of the strategy game Civilization utilizing Java FX features and a simple AI for the CPU</h6><br />
+        <h3>Water Reporting App - 2017</h3>
+        <h6>A Swift (iOS) based application for reporting and updating conditions of nearby water repositories</h6>
+        <h3>Region 2 (Europe) Aftermarket Opportunity Web App - 2017</h3>
+        <h6>An application combining React JavaScript, Java, and PostgreSQL to extract European market sales analytics and display it to John Deere employees</h6>
       </div>
+    </div>
 
+    <div id="hobbies">
       <div>
-        <div class="form-group">
-          <label for="name">Name:</label>
-          <input type="text" class="form-control" id="name">
-        </div>
-        <div class="form-group">
-          <label for="email">Name:</label>
-          <input type="text" class="form-control" id="email">
-        </div>
-        <div class="form-group">
-          <label for="subject">Password:</label>
-          <input type="text" class="form-control" id="subject">
-        </div>
-        <div class="form-group">
-          <label for="message">Comment:</label>
-          <textarea class="form-control" rows="5" id="message"></textarea>
-        </div>
-        <button type="button" class="btn btn-success" onclick="alert('Sent')">Send</button>
+        <h3>Music</h3>
+        <span class="glyphicon glyphicon-music"></span>
+        <h3>Tennis</h3>
+
+        <h3>Golf</h3>
+        <h3>App Development</h3>
+        <h3>Writing<h3>
+        <h3>Reading</h3>
+        <h3>Biking</h3>
+
+
       </div>
+    </div>
+
+    <div id="contact">
+      <div class="container-fluid contact">
+        <p>Contact Me</p>
+        <form>
+          <div class="form-group">
+            <label for="name" >Name:</label>
+            <input type="text" class="form-control" id="name" placeholder="Enter Name">
+          </div>
+          <div class="form-group">
+            <label for="email">Email:</label>
+            <input type="text" class="form-control" id="email" placeholder="Enter Email">
+          </div>
+          <div class="form-group">
+            <label for="message">Message:</label>
+            <textarea class="form-control" rows="5" id="message" placeholder="Enter Message"></textarea>
+          </div>
+          <div class="form-buttons">
+            <button type="button" class="btn btn-success" onclick="alert('Sent')">Send</button>
+            <button type="reset" class="btn btn-success" value="reset">Reset</button>
+          </div>
+        </div>
+
+    </div>
+
+
+
+    <!-- <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">Corey Caskey</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+          <ul class="nav navbar-nav">
+            <li class="active"><a href="home.html">Home</a></li>
+            <li><a href="skills.html">Skills</a></li>
+            <li><a href="bio.html">Biography</a></li>
+            <li><a href="project.html">Projects</a></li>
+            <li><a href="hobbies.html">Hobbies and Interests</a></li>
+          </ul>
+        </div>
+      </div>
+    </nav> -->
+
+
+
+
+
+
+
 
   </body>
-
-
 
 </html>
